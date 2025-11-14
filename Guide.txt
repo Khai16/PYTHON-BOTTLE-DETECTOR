@@ -1,0 +1,60 @@
+ARCHLINUX VERSION:
+1️. Open a terminal and navigate to your project folder
+mkdir bottle_project
+cd bottle_project
+
+2️. Create a Python virtual environment
+python -m venv venv
+
+-This creates a folder called venv inside your project directory.
+ 
+3️. Activate the virtual environment
+source venv/bin/activate
+
+-Once activated, your prompt should show (venv) at the start.
+
+4️. Upgrade pip (optional, but recommended)
+pip install --upgrade pip
+
+5️. Install required packages
+pip install ultralytics opencv-python
+
+-ultralytics → YOLOv8 models
+-opencv-python → webcam/video display
+
+6️. Add your bottle_detect.py file
+
+-Place the code we made earlier in this file:
+-nano bottle_detect.py
+-(Paste the YOLOv8 bottle detection code and save.)
+
+7️. Run the detection script
+python bottle_detect.py
+
+-You should see the webcam window open with bottle detection.
+
+8️. Deactivate the virtual environment (when done)
+deactivate
+
+
++--------------------------------------+
+|                                      |
+|✅ Quick Summary Commands (All-in-One)|
+|                                      |
++--------------------------------------+
+|                                      |
+| mkdir bottle_project                 |
+| cd bottle_project                    |
+| python -m venv venv                  |
+| source                               |
+| pip install --upgrade pip            |
+| pip install ultralytics opencv-python|
+| # create bottle_detect.py here       |
+| python bottle_detect.py              |
+| deactivate                           |
++--------------------------------------+
+
+
+             GOOD LUCK!
+
+
